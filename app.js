@@ -101,3 +101,43 @@ class Friend {
 // let marcia = new Friend('Marcia', '15');
 // let belen = new Friend('Belén', '20');
 // let allison = new Friend('Allison', '21');
+
+/*
+* Comparación funciones ES5 versus ES6
+* Extra no visto en clases
+*/
+
+// ES5 Función sin parámetros
+function hello() {
+  return 'Holi';
+}
+// ES6 Función sin parámetros
+const hello = () => 'Holi';
+
+// ES5 Función con un parámetro y condiciones
+function selection(option) {
+  if (option === 'cat') {
+    return 'miau';
+  } else if (option === 'dog') {
+    return 'guau';
+  } else {
+    return 'f*ck';
+  }
+}
+// ES6 Función con un parámetro y condiciones
+const selection = (option) => {
+  if (option === 'cat') {
+    return 'miau';
+  } else if (option === 'dog') {
+    return 'guau';
+  } else {
+    return 'f*ck';
+  }
+}
+
+// ES5 Función con dos parámetros
+function add (firstNumber, secondNumber) {
+  return firstNumber + secondNumber;
+}
+// ES6 Función con dos parámetros
+const add = (firstNumber, secondNumber) => firstNumber + secondNumber;
