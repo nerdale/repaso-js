@@ -36,9 +36,13 @@ var add = [1, 2, 3, 4, 5];
 var newAdd = add.reduce(function(previousValue, currentValue) {
   return previousValue + currentValue;
 })
+
 // ES6
 const add = [1, 2, 3, 4, 5];
 const newAdd = add.reduce((previousValue, currentValue) => previousValue + currentValue);
+
+const arr = ['Este', 'es', 'un', 'ejemplo', 'de', 'array', 'a' , 'string'];
+const phrase = arr.reduce((previousValue, currentValue) => previousValue + ' ' + currentValue);
 
 /*
 * For
