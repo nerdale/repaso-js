@@ -143,6 +143,8 @@ const selection = (option) => {
     return 'f*ck';
   }
 }
+// ES6 Función con un parámetro y operador ternario
+const selection = (option) => option === 'cat' ? 'miau' : 'guau';
 
 // ES5 Función con dos parámetros
 function add (firstNumber, secondNumber) {
