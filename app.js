@@ -27,49 +27,50 @@ const evenNumbers = numbers.filter(index => index % 2 === 0);
 * Reduce
 * ES5
 */
-var suma = [1, 2, 3, 4, 5];
-var nuevaSuma = suma.reduce(function(valorAnterior, valorActual) {
-  return valorAnterior + valorActual;
+var add = [1, 2, 3, 4, 5];
+var newAdd = add.reduce(function(previousValue, currentValue) {
+  return previousValue + currentValue;
 })
 // ES6
-const suma = [1, 2, 3, 4, 5];
-const nuevaSuma = suma.reduce((valorAnterior, valorActual) => valorAnterior + valorActual);
+const add = [1, 2, 3, 4, 5];
+const newAdd = add.reduce((previousValue, currentValue) => previousValue + currentValue);
 
 /*
 * For
 * ES5
 */
-var numeritos = [1, 2, 3, 4, 5];
-for (var i = 0; i < numeritos.length; i++) {
-  console.log(numeritos[i]);
+var numbers = [1, 2, 3, 4, 5];
+for (var i = 0; i < numbers.length; i++) {
+  console.log(numbers[i] + 2);
 }
 /*
 * ForEach
 * ES5
 */
-var recorrido = numeritos.forEach(function(e) {
+var numbers = [1, 2, 3, 4, 5];
+var result = numbers.forEach(function(e) {
   console.log(e + 2);
 })
-
 // ES6
-const numeritos = [1, 2, 3, 4, 5];
-const recorrido = numeritos.forEach(e => console.log(e + 2));
+const numbers = [1, 2, 3, 4, 5];
+const result = numbers.forEach(e => console.log(e + 2));
 
-// Objetos Literales
+/*
+* Objetos ES5
+*/
+
+// Objeto Literal
 var friendBelen = {
   name: 'Belén',
   age: '20',
   hobbies: [],
-  pastime: function(a) {
+  pastime: function() {
     this.hobbies.push('javascript', 'bullying', 'joke');
   }
 }
 // belen.pastime();
 
-/*
-* Objeto Constructor
-* ES5
-*/
+// Objeto Constructor
 function Friend(n, a) {
   this.name = n;
   this.age = a;
@@ -98,3 +99,5 @@ class Friend {
 }
 
 // let marcia = new Friend('Marcia', '15');
+// let belen = new Friend('Belén', '20');
+// let allison = new Friend('Allison', '21');
