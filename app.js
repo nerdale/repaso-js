@@ -12,6 +12,11 @@ const names = ['PAULA', 'MARCIA', 'CAMILA', 'SABRINA'];
 const namesLower = names.map(element => element.toLowerCase());
 
 /*
+* const namesLower = arr => arr.map(element => element.toLowerCase());
+* namesLower(['PAULA', 'MARCIA', 'CAMILA', 'SABRINA']);
+*/
+
+/*
 * Filter
 * ES5
 */
